@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Графики</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,600&display=swap"
+          rel="stylesheet">
+    <link rel="icon" href="image/icons/icon.png">
+</head>
+<body id="top">
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="index.html"><img src="image/logo.png" class="header__logo-link" width="240px"></a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="index.html" class="header__link">Статья</a></li>
+                        <li class="header__item"><a href="statistics.html" class="header__link">Графики</a></li>
+                        <li class="header__item"><a href="notes.html" class="header__link">Заметки</a></li>
+                        <li class="header__item"><a href="php/form.php" class="header__link">Анкета</a></li>
+                        <li class="header__item"><a href="external_api.html" class="header__link">Внешний API</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-burger__header">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main class="main">
+    <div class="wrapper">
+        <h1 class="heading">Самые популярные языки программирования</h1>
+        <button class="collapsible" style="background-color: #cccccc">Показать таблицу</button>
+        <div class="content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Место в рейтинге</th>
+                        <th>Языки программирования</th>
+                        <th>Баллы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Python</td><td>100</td></tr>
+                    <tr><td>2</td><td>Java</td><td>95.4</td></tr>
+                    <tr><td>3</td><td>C</td><td>94.7</td></tr>
+                    <tr><td>4</td><td>C++</td><td>92.4</td></tr>
+                    <tr><td>5</td><td>JavaScript</td><td>88.1</td></tr>
+                    <tr><td>6</td><td>C#</td><td>82.4</td></tr>
+                    <tr><td>7</td><td>R</td><td>81.7</td></tr>
+                    <tr><td>8</td><td>Go</td><td>77.7</td></tr>
+                    <tr><td>9</td><td>Swift</td><td>70.4</td></tr>
+                    <tr><td>10</td><td>PHP</td><td>68</td></tr>
+                    <tr><td>11</td><td>Dart</td><td>67.7</td></tr>
+                    <tr><td>12</td><td>Ruby</td><td>63.6</td></tr>
+                    <tr><td>13</td><td>Rust</td><td>63.1</td></tr>
+                    <tr><td>14</td><td>Kotlin</td><td>58.5</td></tr>
+                    <tr><td>15</td><td>Scala</td><td>55.4</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="graph">
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <section>
+            <div class = "ColorLineGraph">
+                <h1>Цвет графика</h1>
+                <div class = "CB">
+                    <select id = "color" class = "input" style="width: 100%">
+                        <option id = "gray" value="gray" selected>Серый</option>
+                        <option id = "red" value="red">Красный</option>
+                        <option id = "green" value="green">Зеленый</option>
+                        <option id = "blue" value="blue">Синий</option>
+                        <option id = "yellow" value="yellow">Желтый</option>
+                    </select>
+                    <button class = "form__button st_btn"  style="width: 100%">Поменять цвет</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<script src="js/statistic.js"></script>
+<script src="js/lightbox-plus-jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/graph.js"></script>
+</body>
+</html>
