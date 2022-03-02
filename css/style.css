@@ -1,0 +1,38 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,600&display=swap&subset=cyrillic-ext');
+/*font-family:  'Montserrat', sans-serif;
+ */
+
+@import "_reset.css";
+@import "_body.css";
+@import "media.css";
+@import "components/_header.css";
+@import "components/_main.css";
+@import "components/_statistics.css";
+@import "components/_notes.css";
+@import "components/_form.css";
+
+/* для файла create.php */
+
+.files img {
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.files {
+    text-align: center;
+}
+
+.files a {
+    font-size: 25px;
+    color: black;
+    transition: .5s;
+}
+
+.files a:hover {
+    transition: .5s;
+    color: darkgrey;
+}
+
+
+
+

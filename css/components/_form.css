@@ -1,0 +1,140 @@
+.form__wrapper p {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+    padding-bottom: 4px;
+}
+
+.notReq {
+    color: #868686;
+    font-size: 17px;
+}
+
+input ,
+select,
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    height: 50px;
+    box-shadow: inset 0 3px 5px rgb(199, 199, 199);
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    line-height: 30px;
+    background-color: #f8f8f8;
+}
+
+.input
+{
+    appearance: none;
+}
+
+.radio
+{
+    box-shadow: none;
+    font-weight: 0;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    margin: 0px 2px;
+}
+
+.checkbox
+{
+    box-shadow: none;
+    font-weight: 0;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    margin: 0px 2px;
+}
+
+select {
+    background: url(../../image/icons/arrow.svg) no-repeat right;
+    background-position-x: calc(100% - 16px);
+    background-position-y: calc(100% - 7px);
+    background-size: 32px;
+    background-color: #f8f8f8;
+}
+
+textarea {
+    resize: none;
+    height: 20vh;
+}
+
+.head_input {
+    margin-top: 30px;
+}
+
+.form__button {
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 10px 20px 30px 0;
+    color: white;
+    background-color: #409aa2;
+    box-shadow: 5px 7px 6px rgb(199, 199, 199);
+    transition: 0.3s;
+}
+
+.form__button:hover,
+input[type=file]::file-selector-button:hover {
+    transition: 0.3s;
+    background-color: #50c4ce;
+}
+
+.api_btn {
+    margin-top: 20px;
+}
+
+input[type=file]::file-selector-button {
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: white;
+    background-color: #409aa2;
+    box-shadow: 0 3px 3px rgb(199, 199, 199);
+    transition: 0.3s;
+}
+
+._error {
+    border: solid #f1aeb5 1px;
+    box-shadow: 0 0 10px #f1aeb5;
+}
+
+.req {
+    color: crimson;
+    transition: 0.3s;
+}
+
+#myChart {
+    margin-top: 100px;
+}
+
+/* для файла create.php */
+
+.files img {
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.files {
+    text-align: center;
+}
+
+.files a {
+    font-size: 25px;
+    color: black;
+    transition: .5s;
+}
+
+.files a:hover {
+    transition: .5s;
+    color: darkgrey;
+}

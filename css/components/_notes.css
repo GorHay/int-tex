@@ -1,0 +1,67 @@
+.wrapper__notes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.note {
+    height: 300px;
+    width: 200px;
+    background-color: #686868da;
+    border-radius: .8rem;
+    margin: .75rem;
+    cursor: grab;
+    text-align: center;
+}
+
+/*:first-child находит любой элемент, являющийся первым в своём родителе.*/
+.note:first-child {
+    background-color: #ff0019be;
+}
+
+.dragItem:active {
+    opacity: .5;
+}
+
+.note__content {
+    width: 100%;
+    padding: .5rem;
+    text-align: justify;
+    position: relative;
+    user-select: none;
+    justify-content: center;
+}
+
+tr {
+    transition: all 0.5s ease;
+}
+
+tr:hover {
+    color: #000;
+    border-color: #bacbe6;
+    background-color: #bfd1ec;
+    transition: all 0.3s ease;
+}
+
+.note_hidden {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 0px transparent;
+}
+
+.note_hidden>.note__content {
+    display: none;
+}
+
+.icon img {
+    padding-top: 10px;
+    max-width: 150px;
+    user-select: none;
+}
+
+.main_text {
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: 700;
+    user-select: none;
+}
